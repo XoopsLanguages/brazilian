@@ -1,0 +1,31 @@
+<div id="help-template" class="outer">
+    <h1 class="head">Ajuda: Templates</h1>
+
+    <h4 class="odd">Descrição</h4>
+
+    <p class="even">
+        O XOOPS permite uma certa separação entre a apresentação real do site (o “<em>tema</em>” ou interface do usuário) e o código que roda nos bastidores. O primeiro é tratado por um mecanismo sofisticado baseado em temas gráficos. Um tema pode incluir, em sua forma básica, os templates essenciais em HTML que definem a interface visual do site, bem como as folhas de estilo e imagens necessárias para complementar essa interface visual. Os temas podem ser trocados na interface administrativa, então, mudar toda a aparência de um site XOOPS é apenas uma questão de alterar o valor de um seletor e clicar em “Aceitar”. O XOOPS também oferece aos administradores do site a capacidade de deixar os usuários escolherem entre alguns temas disponíveis.<br><br>
+
+        De forma geral, um <strong><em>tema</em></strong> é a estrutura visual de alto nível de um site: o tema define, por exemplo, o layout geral do site; por outro lado, ele normalmente não define a distribuição específica do conteúdo dentro de um bloco. Isso é tratado por uma entidade diferente chamada <em><strong>conjunto de templates</strong></em>. Um conjunto de templates<em> </em>é um conjunto de templates HTML que define a apresentação do conteúdo dentro de todos os blocos que formam um site XOOPS. Se quisermos uma metáfora mais clara, poderíamos dizer que o tema é como o arquiteto de uma casa, enquanto o conjunto de templates é como o decorador de interiores. O primeiro define as paredes e a distribuição geral, mas é o segundo que fica responsável por “<em>vestir</em>” essas paredes.<br><br>
+
+        Se o tema ativo for simples e incluir apenas um arquivo de tema, arquivos CSS e algumas imagens, o XOOPS utiliza o conjunto de templates padrão para definir a apresentação dos blocos. No entanto, alguns temas mais complexos são sofisticados o suficiente para incluir seu próprio conjunto de templates. Nesse caso, o administrador do site deve usar a interface administrativa para definir tanto o tema quanto o conjunto de templates. <br><br>
+
+        Como é realizada a <em>mágica</em> do tema? Ou seja, como os templates HTML podem incluir conteúdo dinâmico? Isso é feito não com espelhos e fumaça, mas com um engenhoso mecanismo de templates chamado <strong><a rel="external" href="https://www.smarty.net/">Smarty</a></strong>, que faz a função do que costumava ser chamado de <em><strong>interpolação de variáveis</strong></em>. De forma simples, podemos dizer que o sistema XOOPS usa arquivos PHP para armazenar a lógica dos módulos (acesso ao banco de dados, alocação de variáveis, gestão de direitos...), arquivos HTML com variáveis Smarty inseridas para gerenciar a interface visual real, e o motor Smarty para inserir valores e strings em locais específicos dentro do HTML que constrói as páginas vistas pelo usuário final. No geral, o que isso significa para você pode ser facilmente resumido: graças ao seu sistema de temas, o XOOPS permite que os designers de sites construam sites mais interessantes e visualmente impressionantes sem muita preocupação com o que acontece nos bastidores.
+    </p>
+
+    <h4 class="odd">Clonando e baixando conjuntos de templates</h4>
+
+    <p class="even">
+        Se você deseja criar um conjunto de templates personalizado, pode fazer uma cópia do conjunto padrão (ou de qualquer outro) selecionando o link ‘<em>clonar</em>’ (você será solicitado a dar um nome para o novo conjunto). Ao contrário do padrão, outros conjuntos de templates podem ser editados livremente. Você também pode salvar uma cópia de um conjunto de templates no disco selecionando o link ‘<em>baixar</em>’, ou removê-lo com o link ‘<em>excluir</em>’. Às vezes, você também verá um link adicional ‘<em>Gerar</em>’ ao lado de novos módulos para os quais templates ainda não foram criados.
+    </p>
+
+    <h4 class="odd">Editando templates</h4>
+
+    <p class="even">
+        Você pode ver uma lista completa de templates disponíveis navegando pela árvore de diretórios. Quando você selecionar um template, o XOOPS irá abri-lo em um editor onde você pode editá-lo. <br><br>
+
+        Ao editar templates, você deve habilitar uma preferência que atualize automaticamente os arquivos .tpl dos módulos se houver arquivos mais recentes no diretório themes/seu tema/templates para o tema atual (Módulo do Sistema -> Preferências -> Configurações Gerais -> Atualizar arquivos .tpl dos módulos a partir do diretório themes/seu tema/templates? -> ‘<em>Sim</em>’). Isso deve ser desativado quando o site for colocado no ar.<br><br>
+        Se você acidentalmente bagunçar um template, não se esqueça de que você pode recuperar uma cópia ‘<em>boa</em>’ do conjunto de templates padrão. Se você estiver trabalhando com templates não padrão, pode ser uma boa ideia salvar uma cópia no disco antes de começar a modificá-los.
+    </p>
+
+</div>
