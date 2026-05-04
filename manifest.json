@@ -1,0 +1,27 @@
+{
+  "language": "brazilian",
+  "code": "pt-BR",
+  "name": "Portuguese (Brazil)",
+  "nativeName": "Português (Brasil)",
+  "rtl": false,
+  "maintainers": [
+    "XoopsLanguages Team"
+  ],
+  "core": {
+    "2.3.1_Missing": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/brazilian/releases/download/latest/brazilian-core-2.3.1_Missing.zip"
+    },
+    "2.7.0": {
+      "lifecycle": "active",
+      "coverage": 0.0,
+      "provided": 0,
+      "required": 3098,
+      "updated": "2026-05-04",
+      "download": "https://github.com/XoopsLanguages/brazilian/releases/download/latest/brazilian-core-2.7.0.zip",
+      "manifest_url": "https://raw.githubusercontent.com/XoopsLanguages/brazilian/master/manifest.json"
+    }
+  },
+  "modules": {},
+  "themes": {}
+}
