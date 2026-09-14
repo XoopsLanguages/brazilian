@@ -1,0 +1,73 @@
+<div id="help-template" class="outer">
+
+    <h1 class="head">Ajuda: Preferências</h1>
+    <h4 class="odd">Descrição</h4>
+
+    <p class="even">
+        Os painéis de preferências são onde você configura as preferências de todo o seu site. Vale a pena dedicar um tempo para analisá-los, pois algumas configurações podem ter um impacto significativo no desempenho, segurança e facilidade de uso do seu site.
+    </p>
+    <h4 class="odd">Configurações Gerais</h4>
+
+    <p class="even">
+        Estas são as preferências mais importantes e acessadas com mais frequência. Você definirá o Nome do Site e o Slogan do seu Website. Você também selecionará o Tema padrão e a GUI de administração. E se você precisar trabalhar no seu Website, poderá fechá-lo para todos os usuários. Você também pode definir os tempos de Cache de todo o Módulo.
+    </p>
+
+    <h4 class="odd">Meta Tags e Rodapé</h4>
+
+    <p class="even">
+        As meta tags fornecem informações sobre suas informações – elas descrevem a natureza do seu website. Seu principal uso é ajudar os mecanismos de busca e seus robôs a indexar seu website corretamente, ou seja, ajudar as pessoas certas a encontrá-lo. As informações que você fornece são incluídas no cabeçalho de cada página da web. Elas devem representar o conteúdo do site como um todo – as meta informações são as mesmas em todas as páginas, atualmente não podem ser personalizadas para diferentes módulos ou páginas.<br><br>
+
+        Esteja ciente de que os principais mecanismos de busca usam estratégias diferentes para indexar websites. Eles podem atribuir pesos diferentes às meta tags ou até mesmo ignorá-las completamente. O uso cuidadoso de meta informações pode ajudar seu website a obter melhores rankings nos mecanismos de busca, e é útil buscar
+        informações sobre as estratégias de indexação de seus principais referenciadores (consulte o arquivo de log do seu website). Isso pode ajudá-lo a otimizar suas meta informações ou outros aspectos do design e conteúdo do seu site para melhorar seus rankings. <br><br>
+
+        Tente ser preciso e honesto ao fornecer meta informações. Não tente ‘<em>manipular</em>’ os mecanismos de busca para obter um ranking melhor – eles podem reconhecer esse comportamento e seu site pode ser rebaixado ou incluído em uma lista negra de seu índice.
+
+        <br><br>Os campos <strong>Meta Copyright</strong> e <strong>Rodapé</strong> suportam duas tags de substituição para simplificar a manutenção.
+        <br>&nbsp;- <strong>{X_SITEURL}</strong> será substituído pela URL completa da página principal do seu site.
+        <br>&nbsp;- <strong>{X_YEAR}</strong> será substituído pelo ano atual de quatro dígitos. Isso elimina a necessidade de atualizar a data superior de direitos autorais a cada ano.
+    </p>
+
+    <h4 class="odd">Opções de Censura de Palavras</h4>
+
+    <p class="even">
+        O XOOPS pode censurar automaticamente palavras indesejáveis que podem ser postadas pelos visitantes do seu site e substituí-las por um termo genérico e alternativo de sua escolha. A função de censura consome alguns recursos do sistema e pode tornar seu site um pouco mais lento. Ela está desativada por padrão.<br><br>
+
+        Para implementar a censura em seu site, selecione o botão de rádio ‘<em>ativar</em>’. Você precisa inserir uma lista de palavras indesejadas na caixa ‘<em>palavras a censurar</em>’, separando-as com o caractere pipe. Esta função não diferencia maiúsculas de minúsculas. Insira um termo de substituição adequado na caixa ‘<em>substituir
+        palavras impróprias por</em>’. O padrão é #OOPS#.
+
+    </p>
+
+    <h4 class="odd">Opções de Pesquisa</h4>
+
+    <p class="even">
+        O recurso de pesquisa é uma das ferramentas mais importantes para localizar informações em um website portal. A pesquisa do XOOPS categoriza os resultados por módulo – os registros são identificados como notícias, downloads, links ou outros tipos, conforme os módulos que você instalou. <br><br>
+
+        As pesquisas globais de todos os recursos do seu site estão ativadas por padrão. Se você desativar as pesquisas globais, esse recurso não estará mais disponível e o bloco de pesquisa se tornará não funcional.
+        O comprimento mínimo padrão da palavra-chave para pesquisas é de cinco caracteres. Quaisquer termos mais curtos serão ignorados. Isso é útil para controlar a precisão das pesquisas, embora não seja muito útil para termos como “mapa do site”. Palavras-chave curtas tendem a ser mais comuns, então tendem a retornar um número maior
+        de registros, muitos dos quais podem ser irrelevantes. Palavras-chave mais longas tendem a recuperar menos registros, mas com um grau maior de precisão.<br><br>
+
+        A pesquisa é relativamente dispendiosa em termos computacionais e, portanto, excluir termos curtos reduzirá a carga no servidor. No entanto, lembre-se de que às vezes é útil poder pesquisar um termo curto.
+
+    </p>
+
+    <h4 class="odd">Configuração de E-mail</h4>
+
+    <p class="even">
+        Esta seção do painel de controle é usada para configurar seu e-mail para o sistema. Recomenda-se que você deixe o Método de Entrega de E-mail na configuração padrão “PHP (mail)”. Você não precisa preencher os campos Sendmail ou SMTP, a menos que use uma opção alternativa de entrega de e-mail.
+    </p>
+
+    <h4 class="odd">Opções de Autenticação</h4>
+
+    <p class="even">
+        Basta deixá-lo em Banco de Dados Xoops e você pode ignorar todas as outras opções ali.<br><br>
+
+        Servidores LDAP ou Microsoft Active Directory foram adicionados para autenticação como uma alternativa aos usuários normais do Xoops. A razão é que em muitas empresas você já possui um banco de dados de usuários em ADS ou LDAP, e eles podem usá-lo para fazer login no XOOPS e não precisam registrar outra conta.
+    </p>
+
+    <h4 class="odd">Configurações do Módulo do Sistema</h4>
+
+    <p class="even">
+        Aqui você pode ativar/desativar cada uma das seções do Sistema, bem como especificar padrões para todo o sistema, por exemplo, para o número de avatares ou imagens exibidas por página. Você também pode selecionar um editor padrão para blocos, comentários e para todos os módulos.
+    </p>
+
+</div>
